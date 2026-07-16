@@ -49,6 +49,14 @@ To run this project locally:
    code .
    ```
 
+3. **Run the starter script:**
+   You can start the local development server and automatically install dependencies by running:
+   ```bash
+   ./scripts/run.sh
+   ```
+
+   *For step-by-step instructions on opening the terminal in Antigravity IDE and running the script, please read the [Starter Script Guide](file:///Users/elijahdinh/Development/Portfolio/docs/guide_run.md).*
+
 ---
 
 *Thank you for visiting my portfolio! Feel free to reach out if you'd like to collaborate or just say hello.*
