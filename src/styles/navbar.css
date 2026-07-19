@@ -1,0 +1,102 @@
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border-bottom: 1px solid transparent;
+}
+
+.navbar-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+}
+
+.navbar-scrolled {
+  background-color: rgba(var(--background-rgb), 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-color);
+  height: 70px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-container {
+  max-width: var(--container-max);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-family: var(--font-headings);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+  color: var(--color-primary); /* Removed text gradient */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-btn {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  position: relative;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+  color: var(--text-primary);
+}
+
+.nav-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary); /* Changed from gradient to solid primary */
+  transition: width 0.3s ease;
+}
+
+.nav-btn:hover::after {
+  width: 100%;
+}
+
+.contact-btn {
+  background: rgba(var(--primary-rgb), 0.1);
+  color: var(--color-primary);
+  padding: 8px 20px !important;
+  border-radius: 30px;
+  border: 1px solid rgba(var(--primary-rgb), 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-btn:hover {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.4);
+  transform: translateY(-2px);
+}
+
+.contact-btn::after {
+  display: none;
+}

@@ -1,0 +1,96 @@
+/* ==========================================================================
+   EDUCATION & SCHOOL
+   ========================================================================== */
+.education-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.education-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.edu-badge-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: rgba(var(--primary-rgb), 0.15);
+  color: var(--color-primary);
+}
+
+.education-header h3 {
+  font-family: var(--font-headings);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.school-location {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.ap-courses-section h4 {
+  font-family: var(--font-headings);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.ap-intro {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.ap-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.ap-course-card {
+  background: rgba(var(--foreground-rgb), 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.ap-course-card:hover {
+  border-color: var(--border-color-hover);
+  background: rgba(var(--foreground-rgb), 0.04);
+}
+
+.course-code {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background: rgba(var(--primary-rgb), 0.15);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.ap-course-card h5 {
+  font-family: var(--font-headings);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.ap-course-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

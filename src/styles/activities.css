@@ -1,0 +1,66 @@
+/* ==========================================================================
+   EXTRACURRICULARS
+   ========================================================================== */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.activity-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.4s ease;
+}
+
+.activity-card:hover {
+  border-color: var(--border-color-hover);
+  background-color: var(--bg-card-hover);
+  transform: translateY(-5px);
+}
+
+.activity-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(var(--primary-rgb), 0.12);
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.activity-details {
+  flex-grow: 1;
+}
+
+.activity-role {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.activity-details h3 {
+  font-family: var(--font-headings);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.activity-details p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

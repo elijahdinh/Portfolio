@@ -1,0 +1,32 @@
+:root {
+  /* Layout Sizing & Spacing */
+  --container-max: 1200px;
+  --header-height: 80px;
+
+  /* Font mappings */
+  --font-headings: var(--font-serif);
+  --font-body: var(--font-sans);
+
+  /* Original variable mappings to theme tokens */
+  --bg-primary: var(--background);
+  --bg-secondary: var(--sidebar);
+  --bg-card: var(--card);
+  --bg-card-hover: #f1efe9; /* Subtle warm hover state */
+  
+  --border-color: var(--border);
+  --border-color-hover: var(--accent);
+  
+  --accent-glow: rgba(var(--primary-rgb), 0.15);
+  
+  /* Text Colors */
+  --text-primary: var(--foreground);
+  --text-secondary: var(--muted-foreground);
+  --text-muted: var(--muted-foreground);
+  
+  /* Brand Colors */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  
+  /* Subtle text gradient remaining for the main Hero Title */
+  --grad-text: linear-gradient(135deg, var(--foreground) 0%, #4a5568 100%);
+}
